@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import NavBar from "./NavBar";
 
 export const Header = () => {
   return (
@@ -8,10 +9,9 @@ export const Header = () => {
         <div className="w-1/4">Cena-tours</div>
         <div className="flex w-1/2 space-x-4 max-w-xl items-center justify-start ">
           <div className="hidden md:block">
-            <div className="flex gap-7">
-              <div className="pr-5">Home</div>
-              <div className="pr-5">Gallery</div>
-              <div className="pl-5">Contact Us</div>
+            <div
+            key="" className="flex gap-7">
+              <NavBar />
             </div>
           </div>
         </div>
