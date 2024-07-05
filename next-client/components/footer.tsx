@@ -14,14 +14,14 @@ function Footer() {
     >
       <div className="bg-gray-800 bg-opacity-75 py-8 m-0">
         <div className="container mx-auto px-4 flex flex-wrap justify-between">
-          <div className="w-full sm:w-1/2 md:w-1/4 mb-6 px-4">
+          <div className="w-full sm:w-1/2 md:w-1/4 lg:mb-6 mb-4 px-4">
             <h3
               className="text-lg font-bold mb-4 underline"
               style={{ textShadow: "4px 4px 6px rgba(0,0,0,0.8)" }}
             >
               Luxury Vacation Planner
             </h3>
-            <p className="text-sm mb-4">
+            <p className="text-sm mb-4 leading-4 md:leading-tight lg:leading-normal">
               Discover the world with us. We offer the best guides, tours, and
               travel tips for unforgettable experiences.
             </p>
@@ -33,14 +33,14 @@ function Footer() {
             </button>
           </div>
 
-          <div className="w-full sm:w-1/2 md:w-1/4 mb-6 px-4">
+          <div className="w-full sm:w-1/2 md:w-1/4 lg:mb-6 md:mb-4 mb-3 px-4 leading-tight md:leading-snug lg:leading-relaxed">
             <h3
-              className="text-lg font-bold mb-4 underline"
+              className="text-lg font-bold lg:mb-4 mb-3 underline"
               style={{ textShadow: "4px 4px 6px rgba(0,0,0,0.8)" }}
             >
               Quick Links
             </h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 ">
               <li>
                 <a href="/" className="text-sm hover:underline">
                   Home
@@ -66,7 +66,7 @@ function Footer() {
             >
               Contact Us
             </h3>
-            <p className="text-sm">
+            <p className="text-sm leading-4 md:leading-tight lg:leading-normal">
               123 Travel Lane
               <br />
               Colombo, Sri Lanka
@@ -77,9 +77,9 @@ function Footer() {
             </p>
           </div>
 
-          <div className="w-full sm:w-1/2 md:w-1/4 mb-6 px-4">
+          <div className="w-full sm:w-1/2 md:w-1/4 lg:mb-6 mb-4 px-4">
             <h3
-              className="text-lg font-bold mb-4 underline"
+              className="text-lg font-bold lg:mb-4 mb-3 underline"
               style={{ textShadow: "4px 4px 6px rgba(0,0,0,0.8)" }}
             >
               Stay Connected
@@ -116,9 +116,9 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="text-center mt-4">
+        <div className="text-center lg:mt-4 md:mt-3 mt-2" >
           <p
-            className="text-sm"
+            className="text-sm leading-tight md:leading-snug lg:leading-normal"
             style={{ textShadow: "4px 4px 6px rgba(0,0,0,0.8)" }}
           >
             © 2024 BadByte. All rights reserved.
