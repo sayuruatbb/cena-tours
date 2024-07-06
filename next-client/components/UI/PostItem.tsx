@@ -26,7 +26,7 @@ const PostItem: React.FC<IPostItem> = ({
           "flex-direction": "flex-row",
           connector: {
             border: "border-t-[1px] border-r-[1px]",
-            position: "left-10 bottom-0",
+            position: "left-20 bottom-0",
             radius: "rounded-tr-xl",
             dots: {
               top: "-left-1 -top-1",
@@ -42,7 +42,7 @@ const PostItem: React.FC<IPostItem> = ({
           "flex-direction": "flex-row-reverse",
           connector: {
             border: "border-t-[1px] border-l-[1px]",
-            position: "right-10 bottom-0",
+            position: "right-20 bottom-0",
             radius: "rounded-tl-xl",
             dots: {
               top: "-right-1 -top-1",
