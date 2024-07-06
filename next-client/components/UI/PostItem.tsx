@@ -141,13 +141,13 @@ const PostItem: React.FC<IPostItem> = ({
         <div className={`flex items-end ${alignment["flex-direction"]}`}>
           {hasMultiplePhotos &&
             post.media_urls.slice(1, 3).map((url, index) => {
-              const width = (index + 1) * 2;
-              const height = (index + 1) * 2;
+              const width = index === 0 ? "w-1/2" : "w-1/4"
+              const height =  index === 0 ? "h-1/2" : "h-1/4"
 
               return (
                 <div
                   key={url}
-                  className={`relative rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out w-1/${width} h-1/${height} ${alignment["multiple-photos"].margin}`}
+                  className={`relative rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out ${width} ${height} ${alignment["multiple-photos"].margin}`}
                 >
                   <div className="absolute w-full h-full flex items-center justify-center bg-black/50 hover:bg-transparent rounded-lg transition-all duration-500 ease-in-out"></div>
                   <Image
