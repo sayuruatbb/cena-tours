@@ -23,7 +23,7 @@ const Timeline = async () => {
 
   return (
     <div className="flex justify-center">
-      <div className="max-w-5xl w-full flex flex-col items-center gap-5 my-5">
+      <div className="max-w-4xl w-full flex flex-col items-center gap-10 my-10">
         {posts.length > 0 ? (
           posts.map((post, index) => {
             const isLast = posts.length - 1 === index;

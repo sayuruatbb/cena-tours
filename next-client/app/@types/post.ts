@@ -1,8 +1,14 @@
 export type AlignmentStyle = {
   "flex-direction": string;
-  "box-border": string;
-  "box-position": string;
-  "box-radius": string;
+  connector: {
+    border: string;
+    position: string;
+    radius: string;
+    dots: {
+      top: string;
+      bot: string;
+    };
+  };
   "multiple-photos": {
     position: string;
     margin: string;
