@@ -22,8 +22,10 @@ const Timeline = async () => {
   const posts = await fetchInstagramPosts();
 
   return (
-    <div className="flex justify-center">
-      <div className="max-w-4xl w-full flex flex-col items-center gap-10 my-10">
+    <div>
+      <div className="max-w-4xl w-full flex flex-col items-center gap-10 my-10 mx-auto">
+        <h2 className="text-[80px] font-semibold text-slate-800 mb-10">Timeline</h2>
+
         {posts.length > 0 ? (
           posts.map((post, index) => {
             const isLast = posts.length - 1 === index;
