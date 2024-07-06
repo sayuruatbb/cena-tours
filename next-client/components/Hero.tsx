@@ -1,22 +1,59 @@
-import React from "react";
-import hero from "../public/hero.png";
+"use client";
+
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
-import { Header } from "./Header";
+import heroImage from "../public/hero.png";
+import { ImageIcon, VideoIcon } from "@radix-ui/react-icons";
 
 export const Hero = () => {
+  const [isVideo, setIsVideo] = useState(true);
+
   return (
-    <div className="relative bg-slate-500 h-screen">
-      <div className=" absolute z-20 ml-[200px] pt-[340px]">
-        <h1 className=" font-medium text-[#fde68a] text-[70px] leading-3 hidden md:block ">
+    <div className="relative h-screen flex items-center justify-end">
+      <div className="absolute z-20 text-center mx-auto w-full">
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeInOut" }}
+          className="font-medium text-[#fde68a] text-6xl hidden md:block"
+        >
           Welcome to
-        </h1>
-        <p className="hidden md:block font-bold text-[#fde68a] text-[150px] m-[10px]">
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
+          className="hidden md:block font-bold text-[#fde68a] text-[8rem]"
+        >
           Cena-Tours
-          <span className="text-[60px] text-[#fde68a]">.</span>
-        </p>
+          <span className="text-4xl text-red-500 animate-pulse">.</span>
+        </motion.p>
       </div>
-      <div className="h-full w-full absolute z-10">
-        <Image src={hero} alt="hero.png " className="h-screen" />
+      <div className="absolute inset-0 z-10">
+        {isVideo ? (
+          <video
+            src="/hero.mp4"
+            autoPlay
+            loop
+            muted
+            className="h-full w-full object-cover"
+          />
+        ) : (
+          <Image
+            src={heroImage}
+            alt="hero.png"
+            className="h-full w-full object-cover"
+          />
+        )}
+      </div>
+      <div className="absolute bottom-10 right-10 z-30">
+        <button
+          onClick={() => setIsVideo(!isVideo)}
+          className="p-3 bg-[#fde68a] text-black rounded-full"
+        >
+          {isVideo ? <ImageIcon /> : <VideoIcon />}
+        </button>
       </div>
     </div>
   );
