@@ -1,10 +1,10 @@
 type NavigationLink = {
-  name: String;
-  url: String;
+  name: string;
+  url: string;
 };
 
 export const navigationLinks: NavigationLink[] = [
   { name: "HOME", url: "/" },
-  { name: "GALLERY", url: "./Gallery" },
-  { name: "CONTACT US", url: "./ContactUs" },
+  { name: "GALLERY", url: "/Gallery" },
+  { name: "CONTACT US", url: "/ContactUs" },
 ];

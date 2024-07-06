@@ -1,11 +1,10 @@
 import React from "react";
 import hero from "../public/hero.png";
 import Image from "next/image";
-import { Header } from "./Header";
 
 export const Hero = () => {
   return (
-    <div className="relative bg-slate-500 h-screen">
+    <div className="relative h-screen">
       <div className=" absolute z-20 ml-[200px] pt-[340px]">
         <h1 className=" font-medium text-[#fde68a] text-[70px] leading-3 hidden md:block ">
           Welcome to
@@ -16,7 +15,7 @@ export const Hero = () => {
         </p>
       </div>
       <div className="h-full w-full absolute z-10">
-        <Image src={hero} alt="hero.png " className="h-screen" />
+        <Image src={hero} alt="hero.png " className="h-screen object-cover" />
       </div>
     </div>
   );
