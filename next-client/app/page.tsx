@@ -1,4 +1,4 @@
-import Timeline from "@/components/Timeline";
+import Timeline from "@/components/server-side/Timeline";
 import React from "react";
 
 export default function Home() {
