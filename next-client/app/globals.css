@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.about-us {
+    background-image: url('/images/about3.jpg');
+}
