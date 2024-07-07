@@ -5,6 +5,6 @@ type NavigationLink = {
 
 export const navigationLinks: NavigationLink[] = [
   { name: "HOME", url: "/" },
-  { name: "GALLERY", url: "/Gallery" },
-  { name: "CONTACT US", url: "/ContactUs" },
+  { name: "GALLERY", url: "#Gallery" },
+  { name: "ABOUT ME", url: "#AboutMe" },
 ];
