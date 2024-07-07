@@ -2,10 +2,10 @@ import React from "react";
 
 function About() {
   return (
-    <section id="AboutMe" className="bg-slate-200">
+    <section id="AboutMe" className="bg-slate-200 py-10">
       <div
-        className=" max-w-4xl mx-auto p-8 shadow-lg rounded-lg relative bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/about3.jpg')" }}
+        className=" max-w-4xl mx-auto p-8 shadow-lg rounded-lg relative bg-cover bg-center about-us"
+        
       >
         <div className="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
         <div className="relative p-8">
@@ -47,7 +47,7 @@ function About() {
               spark curiosity and excitement.
             </li>
             <li>
-              <strong>Traveler's Toolkit:</strong> Handy tips and tricks to make
+              <strong>Traveler&apos;s Toolkit:</strong> Handy tips and tricks to make
               your trips smooth and memorable.
             </li>
           </ul>

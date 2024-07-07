@@ -1,5 +1,5 @@
-import About from "@/components/about";
-import Footer from "@/components/footer";
+import About from "@/components/About";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return <main>
