@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import heroImage from "../public/hero.png";
+import heroImage from "../../public/hero.png";
 import { ImageIcon, VideoIcon } from "@radix-ui/react-icons";
 
 export const Hero = () => {
