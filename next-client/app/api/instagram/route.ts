@@ -1,8 +1,16 @@
-// app/api/instagram/route.ts
 import { NextResponse } from "next/server";
 import { IgApiClient } from "instagram-private-api";
+import { getCache, setCache } from "./cache";
+
+const CACHE_KEY = "instagram_posts";
+const CACHE_TTL = 60 * 60 * 1000; // 10 minutes
 
 export async function GET() {
+  const cachedData = getCache(CACHE_KEY);
+  if (cachedData) {
+    return NextResponse.json(cachedData);
+  }
+
   const { INSTAGRAM_USERNAME, INSTAGRAM_PASSWORD } = process.env;
 
   const ig = new IgApiClient();
@@ -39,6 +47,7 @@ export async function GET() {
       };
     });
 
+    setCache(CACHE_KEY, formattedPosts, CACHE_TTL);
     return NextResponse.json(formattedPosts);
   } catch (error) {
     console.error("Failed to fetch Instagram data:", error);
