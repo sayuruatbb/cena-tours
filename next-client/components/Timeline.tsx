@@ -22,7 +22,7 @@ const Timeline = async () => {
   const posts = await fetchInstagramPosts();
 
   return (
-    <div>
+    <section id="Gallery">
       <div className="max-w-4xl w-full flex flex-col items-center gap-10 my-10 mx-auto">
         <h2 className="text-[80px] font-semibold text-slate-800 mb-10">Timeline</h2>
 
@@ -46,7 +46,7 @@ const Timeline = async () => {
           <p>No posts available</p>
         )}
       </div>
-    </div>
+    </section>
   );
 };
 
