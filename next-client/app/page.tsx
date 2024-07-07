@@ -1,7 +1,7 @@
 import About from "@/components/about";
 import Footer from "@/components/footer";
-import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
+import { Header } from "@/components/client-side/Header";
+import { Hero } from "@/components/client-side/Hero";
 import Timeline from "@/components/server-side/Timeline";
 import React from "react";
 
