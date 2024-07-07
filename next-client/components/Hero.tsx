@@ -33,7 +33,7 @@ export const Hero = () => {
       <div className="absolute inset-0 z-10">
         {isVideo ? (
           <video
-            src="/hero.mp4"
+            src="/hero-alt.mp4"
             autoPlay
             loop
             muted
