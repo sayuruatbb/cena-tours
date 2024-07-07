@@ -67,7 +67,7 @@ export const Header = () => {
   );
 
   return (
-    <header className="absolute top-0 w-full p-6 bg-black/40 z-50 text-white">
+    <header className="absolute top-0 w-full p-6 bg-black/30 z-50 text-white">
       <DefaultNav />
       <MobileNav />
     </header>
