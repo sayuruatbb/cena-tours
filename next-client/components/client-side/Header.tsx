@@ -35,7 +35,7 @@ export const Header = () => {
             <Link
               href={link.url}
               className={`${
-                pathname === link.url && "text-cream font-semibold"
+                pathname === link.url && "text-[#FF5733] font-semibold"
               } cursor-pointer hover:scale-[110%] transition-all duration-200 ease-in-out antialiased`}
               key={link.name}
             >
@@ -55,7 +55,7 @@ export const Header = () => {
           <Link
             href={link.url}
             className={`${
-              pathname === link.url && "text-cream font-semibold"
+              pathname === link.url && "text-[#FF5733] font-semibold"
             } cursor-pointer hover:scale-[110%] transition-all duration-200 ease-in-out antialiased`}
             key={link.name}
           >
