@@ -131,7 +131,7 @@ const PostItem: React.FC<IPostItem> = ({
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
           >
-            {logEntry}
+            {post.caption || logEntry}
           </motion.h2>
         )}
         {!isLast && !hasMultiplePhotos && (
