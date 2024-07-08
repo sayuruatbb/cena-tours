@@ -7,7 +7,7 @@ import heroImage from "../../public/hero.png";
 import { ImageIcon, VideoIcon } from "@radix-ui/react-icons";
 
 export const Hero = () => {
-  const [isVideo, setIsVideo] = useState(true);
+  const [isVideo, setIsVideo] = useState(false);
 
   return (
     <div className="relative h-screen flex items-center justify-end">
