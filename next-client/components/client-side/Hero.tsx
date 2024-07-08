@@ -16,7 +16,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="font-medium text-[#fde68a] text-6xl hidden md:block"
+          className="font-medium text-white text-6xl hidden md:block"
         >
           Welcome to
         </motion.h1>
@@ -24,16 +24,16 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
-          className="hidden md:block font-bold text-[#fde68a] text-[8rem]"
+          className="hidden md:block font-bold text-white text-[8rem]"
         >
           Cena-Tours
-          <span className="text-4xl text-red-500 animate-pulse">.</span>
+          <span className="text-[60px] text-[#FF5733] animate-pulse">.</span>
         </motion.p>
       </div>
       <div className="absolute inset-0 z-10">
         {isVideo ? (
           <video
-            src="/hero-alt.mp4"
+            src="/hero-2.mp4"
             autoPlay
             loop
             muted
@@ -50,7 +50,7 @@ export const Hero = () => {
       <div className="absolute bottom-10 right-10 z-30">
         <button
           onClick={() => setIsVideo(!isVideo)}
-          className="p-3 bg-[#fde68a] text-black rounded-full"
+          className="text-white rounded-full flex items-center justify-center"
         >
           {isVideo ? <ImageIcon /> : <VideoIcon />}
         </button>
